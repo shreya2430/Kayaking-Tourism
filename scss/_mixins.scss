@@ -7,3 +7,21 @@
   @mixin box-shadow($color: rgba(0, 0, 0, 0.1)) {
     box-shadow: 0 2px 5px $color;
 }
+
+/* Mixin for button styling */
+@mixin button-style($padding, $font-weight) {
+    border: none;
+    cursor: pointer;
+    background-color: $color-orange;
+    padding: $padding;
+    text-decoration: none !important;
+    color: $color-white;
+    font-size: $btn-font-size;
+    box-shadow: $btn-box-shadow;
+    font-weight: $font-weight;
+    letter-spacing: $btn-letter-spacing;
+}
+
+@mixin give-padding($padding:default(0)){
+    padding: $padding;
+}

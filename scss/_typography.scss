@@ -12,3 +12,14 @@ body {
     font-weight: 580;
     font-size: 35px;
   }
+
+  /* Citation text styling */
+.cite {
+    font-size: small;
+    color: $cite-color;
+
+    a {
+        text-decoration: underline;
+        color: $cite-color;
+    }
+}

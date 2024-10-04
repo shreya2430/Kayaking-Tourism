@@ -64,3 +64,13 @@ $hero-height: 400px;
         z-index: $z-index-below;
     }
 }
+/* include Button Styles */
+.btn-orange {
+    @include button-style(10px, $btn-font-weight);
+    width: fit-content;
+}
+
+// include cite style for hero section
+.cite{
+    @include give-padding(9px 0px 7px 0px);
+}
