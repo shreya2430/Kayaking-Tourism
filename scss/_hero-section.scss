@@ -1,0 +1,66 @@
+/* Variables */
+$hero-bg-image: url('../images/home-image-2.png');
+$card-width: 300px;
+$card-height: 250px;
+$hero-width: 100%;
+$hero-height: 400px;
+
+
+/* Hero Section */
+.hero-section {
+    background-image: $hero-bg-image;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 65%;
+    width: $hero-width;
+    height: $hero-height;
+    position: relative;
+    margin-bottom: 60px;
+    margin-top: 120px;
+    
+    /* Black background overlay */
+    .bg-black {
+        background-color: $color-black;
+        padding-top: 10px;
+        margin: auto;
+        width: 100%;
+        height: 150%;
+        position: absolute;
+        top: 75%;
+        right: 0%;
+        z-index: $z-index-below;
+    }
+
+    /* Card with heading */
+    .card-with-heading {
+        background-color: $color-white;
+        padding: 20px;
+        width: $card-width;
+        height: $card-height;
+        position: absolute;
+        top: 85%;
+        left: 35%;
+        transform: translate(-50%, -20%);
+        z-index: $z-index-above;
+        margin: auto;
+
+        h1 {
+            margin-top: 2%;
+            margin-bottom: 0px;
+        }
+    }
+
+    /* Card with orange background */
+    .card-with-orange-background {
+        background-color: $color-orange;
+        padding-top: 10px;
+        margin: auto;
+        width: 400px;
+        height: 250px;
+        position: absolute;
+        top: 15%;
+        right: 0%;
+        transform: translate(-52%, -37%);
+        z-index: $z-index-below;
+    }
+}
