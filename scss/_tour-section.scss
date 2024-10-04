@@ -18,14 +18,14 @@
         .cite {
             // text-wrap: balance;
             font-size: small;
-            color:$color-white; 
+            color:$color-off-white; 
             max-width: 30%;
             margin: 0 auto; /* Center the cite element */
             font-weight: 5;
             line-height: 2.0;
 
             a {
-                color:$color-white;
+                color:$color-off-white;
                 text-decoration: underline; /* If you want to add underline */
             }
         }
@@ -50,7 +50,7 @@
         max-width: 300px;
         text-align: center;
         margin: auto;
-        color: #6b6b6ba6;
+        color: $color-gray;
 
         h3 {
             color: #1f1f1fd2;
