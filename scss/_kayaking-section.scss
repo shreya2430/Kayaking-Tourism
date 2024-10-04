@@ -1,0 +1,55 @@
+.Kayaking-info {
+    background-color: $color-gray; // You may want to define this color in your variables
+    padding: 5% 0; // Padding for top and bottom
+}
+
+/* Centering button container in Kayaking info section */
+.center-button {
+    /* include Button Styles */
+    .btn-orange-large {
+    @include button-style(10px 20px, 800);
+    }
+    @include flex-center; // Use the flex-center mixin for centering
+    height: 90px;             
+    margin: 30px auto 0; // Top margin and auto horizontal centering
+}
+
+/* Heading styles for mission, vision, and history section */
+.Kayaking-info-section-heading {
+    display: block;
+    text-align: center;
+    margin: 60px auto 40px; // Top and bottom margins
+    font-size: xx-large;
+}
+
+.Kayaking-info-section {
+    display: flex;
+    flex-wrap: wrap; // Wrap the articles if needed
+    justify-content: center; // Center the articles
+}
+
+/* Styles for individual info articles (Mission, Vision, History) */
+.Kayaking-info-section article {
+    max-width: 25%; 
+    margin: 0 2.5%; // Adjust margin for even spacing
+}
+
+.Kayaking-info-section h3 {
+    display: inline-block;
+}
+
+.Kayaking-info-section p {
+    margin-left: 11%;
+    color: #6b6a6a7e;
+}
+
+/* Circle element used for decorative purposes */
+.circle {
+    width: 30px;             
+    height: 30px;
+    background-color: $color-orange; // Use the defined variable for consistency
+    border-radius: 50%;    
+    display: inline-block;      
+    margin-right: 8px;          
+    vertical-align: middle;     
+}

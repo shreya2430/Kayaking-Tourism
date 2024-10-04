@@ -6,40 +6,42 @@
     .tour-article {
         display: block;
         margin-top: 15%;
+        height:35px;
         text-align: center;
         color: $color-white;
         font-size: xx-large;
 
         h2 {
-            margin-bottom: 0; /* `auto` doesn't have an effect for margin-bottom */
+            margin-bottom: 5px; /* `auto` doesn't have an effect for margin-bottom */
             font-weight: 100;
         }
 
         .cite {
-            // text-wrap: balance;
+            text-align: center;
             font-size: small;
             color:$color-off-white; 
             max-width: 30%;
             margin: 0 auto; /* Center the cite element */
-            font-weight: 5;
-            line-height: 2.0;
+            font-weight: 15;
+            line-height: 2.1;
 
             a {
                 color:$color-off-white;
-                text-decoration: underline; /* If you want to add underline */
+                text-decoration: underline;
             }
         }
     }
     //display tour container using grid
-
     .tour-cards-white-container {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 5px;
+        gap: 15px;
         margin-left: auto;
         margin-right: auto;
-        padding: 20px;
+        padding-bottom: 20px;
         max-width: 1000px;
+        position: relative;
+        top:4px;
     }
 
     //style each tour-card
@@ -51,6 +53,9 @@
         text-align: center;
         margin: auto;
         color: $color-gray;
+        position: relative;
+        z-index: 2;
+        top:130px;
 
         h3 {
             color: #1f1f1fd2;
