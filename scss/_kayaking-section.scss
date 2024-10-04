@@ -1,12 +1,14 @@
 .Kayaking-info {
-    background-color: $color-gray; // You may want to define this color in your variables
+    background-color: $color-light-gray; 
     padding: 5% 0; // Padding for top and bottom
+    line-height: 1.8;
 }
 
-/* Centering button container in Kayaking info section */
+/* Centering Learn More button container in Kayaking info section */
 .center-button {
     /* include Button Styles */
-    .btn-orange-large {
+    .btn-orange-large 
+    {
     @include button-style(10px 20px, 800);
     }
     @include flex-center; // Use the flex-center mixin for centering
@@ -19,37 +21,56 @@
     display: block;
     text-align: center;
     margin: 60px auto 40px; // Top and bottom margins
-    font-size: xx-large;
+    font-size: x-large;
 }
 
 .Kayaking-info-section {
-    display: flex;
-    flex-wrap: wrap; // Wrap the articles if needed
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    flex-wrap: wrap; // Wrap the articles
     justify-content: center; // Center the articles
+    grid-gap: 40px; /* Add space between columns */
+    max-width: 1000px;
+    margin: 0 auto; /* Center the section on the page */
+    text-align: left; /* Left-align text for better readability */
 }
 
 /* Styles for individual info articles (Mission, Vision, History) */
 .Kayaking-info-section article {
-    max-width: 25%; 
+    display: flex;
+    align-items: stretch; /* Align the circle and text */
+    padding: 10px;
+    flex-wrap: wrap;
     margin: 0 2.5%; // Adjust margin for even spacing
+
+    .article-text{
+        max-width: 90%;
+    }
 }
 
+// style the kakyking each of heading section of article i.e, Mission, Vission, History & Our Team
 .Kayaking-info-section h3 {
+    // display: inline-block;
     display: inline-block;
+    font-size: large;
+    font-weight: $h3-font-weight;
+    margin-bottom: 10px;
+    color: $color-h3;
 }
 
 .Kayaking-info-section p {
-    margin-left: 11%;
-    color: #6b6a6a7e;
+    font-size: small;
+    font-weight: 100;
+    margin-left: 44px;
+    color: $color-text-light;
+}
+.article-text {
+    max-width: 90%;
 }
 
 /* Circle element used for decorative purposes */
 .circle {
-    width: 30px;             
-    height: 30px;
-    background-color: $color-orange; // Use the defined variable for consistency
-    border-radius: 50%;    
+    @include circle-orange(35, 50%);
     display: inline-block;      
-    margin-right: 8px;          
-    vertical-align: middle;     
+    margin-right: 10px;
 }

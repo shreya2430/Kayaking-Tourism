@@ -22,6 +22,14 @@
     letter-spacing: $btn-letter-spacing;
 }
 
+@mixin circle-orange($radius, $border-radius){
+        width: #{$radius}px;    
+        height: #{$radius}px;    
+        background-color: $color-orange; 
+        border-radius: $border-radius;
+        flex-shrink: 0; /* Ensure the circle doesn't shrink */    
+}
+
 @mixin give-padding($padding:default(0)){
     padding: $padding;
 }
