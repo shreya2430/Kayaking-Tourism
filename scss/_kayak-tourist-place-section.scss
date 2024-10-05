@@ -4,12 +4,13 @@
     grid-template-columns: 1.0fr 1.4fr;  // Adjusting proportions between text and card
     gap: 10px;  // Adds space between the columns
     background-color: $color-off-white;
-    padding: 5% 10% 15%;  // Adjust padding for better alignment on larger screen
+    padding: 5% 10% 21%;  // Adjust padding for better alignment on larger screen
   }
   .left{
     grid-column: 1;  // First column
     max-width: 60%;
     margin-left: 31%;
+    margin-top: 7%;
 
       /* Adjusted circle placement */
   .circle-downwards {

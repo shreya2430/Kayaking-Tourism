@@ -1,0 +1,61 @@
+/* Add orange background to Mission section */
+.org-background {
+    background-color: $color-orange;
+    padding-bottom: 3%;
+    padding-top: 5%;  // Adding top padding for spacing
+}
+
+/* Mission card section padding */
+.our-mission_card-section {
+    padding: 10%;
+    position: relative;  // Ensure it's relative for proper absolute positioning of children
+}
+
+/* Style for the mission card image */
+.our-mission_card-image {
+    position: absolute;
+    transform: translate(45%, -100%);
+    z-index: 1;
+    margin: auto;
+
+    img{
+        height: 500px;
+        width: 170%;  
+        object-fit: cover;  // Ensure the image scales correctly without distortion
+        max-width: none; 
+    }
+}
+
+/* Style for the mission card */
+.our-mission_card {
+    position: absolute;
+    background-color: $color-white;
+    max-width: 35%;
+    text-align: left;
+    left: 55%;  // Adjust for centering
+    padding: 4% 2%;  // Use shorthand for padding
+    transform: translate(-35%, -90%);
+    z-index: 2;
+
+    .btn-orange-large {
+        @include btn-orange-large;
+        margin-bottom: 35px;
+
+    }
+    //add bottom padding
+    .cite {
+        padding-bottom: 35px;
+    }
+
+    h2 {
+        font-size: 2rem;  // Adjust for better scaling
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    p {
+        max-width: 90%;
+        padding: 10px 0px 10px 0px;
+        color: $text-color;
+        line-height: 1.5;  // Improve readability
+    }
+}
