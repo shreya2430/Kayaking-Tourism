@@ -1,8 +1,3 @@
-// Variables for colors and spacing
-$background-color: #f8f8f8;
-$text-color: #333;
-$icon-size: 24px;
-$padding: 10px 20px;
 
 * {
     margin: 0;
@@ -11,35 +6,32 @@ $padding: 10px 20px;
 }
 
 header {
-    position: fixed; // Make the header fixed
-    top: 0; // Aligns it to the top of the viewport
-    left: 0; // Aligns it to the left of the viewport
-    right: 0; // Aligns it to the right of the viewport
-    z-index: 1000; // Ensures the header stays on top of other content
-    display: grid;
-    grid-template-columns: 1fr auto; // Logo on the left, navbar on the right
-    align-items: center;
-    padding: $padding;
-    background-color: $background-color; // Background color to prevent overlap issues
-
-    .logo-and-navBar {
-        // Add styles for the logo section 
-        color: #dadada;
-        font-size: x-large;   
-    }
-
+    padding-bottom: 20px;
     .navbar {
-        display: flex;
-        align-items: center; 
-        justify-content: flex-start; 
-        width: 100%; 
+        position: fixed; // Make the header fixed
+        top: 0; // Aligns it to the top of the viewport
+        left: 0; // Aligns it to the left of the viewport
+        right: 0; // Aligns it to the right of the viewport
+        z-index: 1000; // Ensures the header stays on top of other content
+        display: grid;
+        grid-template-columns: 1fr auto; // Logo on the left, navbar on the right
+        align-items: flex-start;
+        padding: 10px 20px;
+        background-color: $nav-background-color; // Background color to prevent overlap issues
 
+        p{
+            grid-column: 1;
+            font-size: larger;
+            font-weight: 500;
+            color: rgba(128, 128, 128, 0.51);
+        }
         .nav-links {
             display: none;
 
         }
 
         .menu-icon {
+            grid-column: 2;
             font-size: $icon-size;
             border: none;
             background: none;
