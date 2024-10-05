@@ -1,0 +1,126 @@
+/* Section for kayak tourist places */
+.kayak-tourist-place_section {
+    display: grid;
+    grid-template-columns: 1.0fr 1.4fr;  // Adjusting proportions between text and card
+    gap: 10px;  // Adds space between the columns
+    background-color: $color-off-white;
+    padding: 5% 10% 15%;  // Adjust padding for better alignment on larger screen
+  }
+  .left{
+    grid-column: 1;  // First column
+    max-width: 60%;
+    margin-left: 31%;
+
+      /* Adjusted circle placement */
+  .circle-downwards {
+    @include circle-orange(70, 90%);
+    margin-top: 40px;
+  }
+  }
+  
+  .kayak-tourist-place_section h2 {
+    font-size: 2.5rem;  // Larger font size for heading
+    color: #333;
+    margin-bottom: 20px;
+    text-align: left;
+    line-height: 1.2;  // Improve line spacing for readability
+  }
+  
+  /* Details for kayak tours (Left side) */
+  .kayak-tours-details {
+    grid-column: 2;  // Second column 
+    max-width: 75%;
+    h3{
+        font-size: 1.2em;
+        margin: 0;
+        font-weight: 800;
+    }
+
+  }
+  
+  /* Mission card details section (Right side) */
+  .mission-card-details {
+    background-color: $color-white;
+    padding: 40px;
+
+    p{
+        color: $color-black;
+    }
+  }
+  
+  .mission-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e4e4e4;
+    padding: 15px;
+    font-size: small;
+    color: $color-orange;
+
+    h3{
+        color: $color-orange;
+    }
+  }
+
+  /* Other card details section */
+  .other-card-details section {
+    display: flex;
+    justify-content: space-between;
+    font-size: small;
+    align-items: center;
+    background-color: $color-white;
+    padding: 5px 50px 40px 50px;
+    color: $color-gray;
+
+    h3{
+        color: $color-gray;
+       
+    }
+  }
+  
+  /* Styling for each rating card */
+  .ratings-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Styling for toggle buttons */
+  .toggle-btn-white {
+    @include toggle-btn(#9f9898);
+  }
+  //toggle button orange
+  .toggle-btn {
+    @include toggle-btn($color-orange);
+  }
+  
+  /* Mission card details */
+  .mission-card-details p {
+    font-size: 0.9em;
+    padding: 10px;
+    margin: 3% 0 1%;
+  }
+  
+  /* List styling in mission card details */
+  .mission-card-details ul {
+    margin: 0;
+    padding-left: 15px;
+  }
+  
+  .mission-card-details ul li {
+    text-align: start;
+    font-size: 0.9em;
+    list-style: none;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 5px;
+    color: $color-gray;
+  }
+  
+  .mission-card-details ul li:before {
+    content: "-";
+    position: absolute;
+    left: 2%;
+    color: $color-gray;
+  }
+  

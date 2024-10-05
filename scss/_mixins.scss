@@ -34,6 +34,14 @@
         flex-shrink: 0; /* Ensure the circle doesn't shrink */    
 }
 
+@mixin toggle-btn($color){
+    color: $color;
+    background: none;
+    border: none;
+    font-size: 1.8em;
+    cursor: pointer;
+}
+
 @mixin give-padding($padding:default(0)){
     padding: $padding;
 }

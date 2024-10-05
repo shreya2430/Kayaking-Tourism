@@ -10,13 +10,13 @@
 
     .tour-content-and-small-images {
         grid-column: 1; // This content stays in the first column
-        max-width: 75%; // Set the maximum width
+        max-width: 90%; // Set the maximum width
 
         h2 {
-            font-size: xx-large;
+            // font-size: xxx-large;
             color: $color-text;
             margin-bottom: 20px;
-            max-width: 80%; // Limit the width for better readability
+            // max-width: 70%; // Limit the width for better readability
         }
 
         p {
