@@ -21,6 +21,10 @@
     font-weight: $font-weight;
     letter-spacing: $btn-letter-spacing;
 }
+@mixin btn-orange-large 
+{
+@include button-style(10px 20px, 800);
+}
 
 @mixin circle-orange($radius, $border-radius){
         width: #{$radius}px;    

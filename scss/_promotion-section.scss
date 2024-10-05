@@ -1,0 +1,55 @@
+.promotion-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr; // Two equal columns
+    grid-gap: 5px; // Adjust the gap between the columns
+    align-items: center; // Align content vertically in the center
+    padding: 40px;
+    margin: 0 5%; // Left and right margins for responsiveness
+    justify-items: stretch;
+    margin-left: 18%;
+
+    .tour-content-and-small-images {
+        grid-column: 1; // This content stays in the first column
+        max-width: 75%; // Set the maximum width
+
+        h2 {
+            font-size: xx-large;
+            color: $color-text;
+            margin-bottom: 20px;
+            max-width: 80%; // Limit the width for better readability
+        }
+
+        p {
+            font-size: small;
+            color: $color-text-light;
+            margin-bottom: 20px;
+            max-width: 90%;
+        }
+
+        .small-tour-images {
+            display: flex;
+            flex-wrap: wrap; // Flexbox for better small image alignment
+            gap: 10px; // Spacing between small images
+
+
+            img {
+                width: 120px;
+                height: 110px;
+                background-color: $color-white;
+            }
+        }
+        .btn-orange-large {
+            @include btn-orange-large;
+            margin-bottom: 35px;
+
+        }
+    }
+
+    .tour-images {
+        margin-left: 10px;
+        .main-image {
+            width: 60%;
+            height: auto;
+        }
+    }
+}
