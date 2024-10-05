@@ -1,0 +1,73 @@
+/* Footer section containing location and contact, form information */
+.footer{
+    background-color: #292b33;
+   }
+   /* add style to dispaly location and form section */
+   .location-form-container{
+       display: flex;
+       flex-direction: row;
+       gap: 20%;
+       padding-top: 5%;
+       padding-bottom: 3%;
+   }
+   /* Location information section */
+   .location{
+       max-width: 50%;
+       padding-left: 18%;
+
+       h3{
+        color: $color-white;
+    }
+    //address styling
+    address{
+        color:rgba(255, 255, 255, 0.654);
+           margin-top: 15%;
+
+           span {
+            display: block;
+            margin-bottom: 5px; /* Optional: Add some space between the lines */
+            line-height: 1.5;
+        }
+       }
+   }
+
+   /* Section for social media links */
+   .follow-us{
+       margin-top: 40px;
+       h3{
+        padding-bottom: 10px;
+       }
+       img{
+        border-radius: 6px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+   }
+
+   /* Privacy policy section */
+   .privacy-policy{
+       padding-top: 25px;
+       font-size: medium;
+       p{
+        color: rgba(255, 255, 255, 0.654);
+       }
+   }
+
+
+   /* Extra information section at the bottom of the footer */
+   .extra-info{
+       display: flex;
+       background-color: #323232;
+       text-align: center;
+       align-items: center;
+       justify-content: center;
+       padding: 20px;
+
+       p{
+        color: rgba(255, 255, 255, 0.683);
+        max-width: 18%;
+        font-size: x-small;
+    }
+   }
+
+   
+   

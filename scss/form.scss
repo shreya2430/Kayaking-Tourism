@@ -1,0 +1,28 @@
+/* Contact form styling */
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 28%;
+    gap: 7px;
+
+    h3{
+        color: $color-white;
+    }
+    input{
+        margin-top: 1px;
+        height: 25px;
+
+    }
+    textarea{
+        height: 75px;
+    }
+    button{
+        @include btn-orange-large ;
+        margin-top: 10px;
+    }
+}
+input::placeholder,textarea::placeholder {
+    color: $color-white-placeholder;
+    opacity: 1; 
+}
