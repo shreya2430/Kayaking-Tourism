@@ -1,4 +1,5 @@
 /* Footer section containing location and contact, form information */
+
 .footer{
     background-color: #292b33;
    }
@@ -31,17 +32,26 @@
        }
    }
 
+   // Define an array of social media platforms
+$social-media: ('facebook', 'twitter', 'instagram', 'linkedin'); 
    /* Section for social media links */
    .follow-us{
-       margin-top: 40px;
-       h3{
-        padding-bottom: 10px;
-       }
-       img{
-        border-radius: 6px;
-        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        margin-top: 40px;
+
+        h3 {
+            padding-bottom: 10px;
+        }
+
+        @for $i from 1 through length($social-media) {
+            // Create a class for each social media
+            .social-#{nth($social-media, $i)} {
+                img {
+                    border-radius: 10px;
+                    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+                }
+               }
     }
-   }
+}
 
    /* Privacy policy section */
    .privacy-policy{
