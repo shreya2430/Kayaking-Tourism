@@ -4,7 +4,7 @@
     align-items: center;
   }
   
-  @mixin box-shadow($color: rgba(0, 0, 0, 0.1)) {
+@mixin box-shadow($color: rgba(0, 0, 0, 0.1)) {
     box-shadow: 0 2px 5px $color;
 }
 
@@ -25,7 +25,7 @@
 {
 @include button-style(10px 20px, 800);
 }
-
+// add an circular orange for decoorative purpose
 @mixin circle-orange($radius, $border-radius){
         width: #{$radius}px;    
         height: #{$radius}px;    
@@ -44,4 +44,22 @@
 
 @mixin give-padding($padding:default(0)){
     padding: $padding;
+}
+
+// Mixin for dynamic grid layout (columns and/or rows)
+@mixin grid-layout($columns: null, $rows: null, $gap: null) {
+    display: grid;
+  
+    // Conditional logic for columns
+    @if $columns != null {
+      grid-template-columns: #{join($columns, ' ')};
+    }
+  
+    // Conditional logic for rows
+    @if $rows != null {
+      grid-template-rows: #{join($rows, ' ')};
+    }
+    @if $gap != null {
+    gap: $gap; 
+    } 
 }

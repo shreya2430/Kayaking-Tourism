@@ -13,8 +13,7 @@ header {
         left: 0; // Aligns it to the left of the viewport
         right: 0; // Aligns it to the right of the viewport
         z-index: 1000; // Ensures the header stays on top of other content
-        display: grid;
-        grid-template-columns: 1fr auto; // Logo on the left, navbar on the right
+        @include grid-layout((1fr auto));
         align-items: flex-start;
         padding: 10px 20px;
         background-color: $nav-background-color; // Background color to prevent overlap issues

@@ -1,7 +1,8 @@
 .promotion-section {
-    display: grid;
-    grid-template-columns: 1fr 1.4fr; // Two equal columns
-    grid-gap: 5px; // Adjust the gap between the columns
+    @include grid-layout((1fr 1.4fr), null, 5px); 
+    // display: grid;
+    // grid-template-columns: 1fr 1.4fr; // Two equal columns
+    // grid-gap: 5px; // Adjust the gap between the columns
     align-items: center; // Align content vertically in the center
     padding: 40px;
     margin: 0 5%; // Left and right margins for responsiveness

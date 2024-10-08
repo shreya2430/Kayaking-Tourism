@@ -1,8 +1,7 @@
 /* Section for kayak tourist places */
 .kayak-tourist-place_section {
-    display: grid;
-    grid-template-columns: 1.0fr 1.4fr;  // Adjusting proportions between text and card
-    gap: 10px;  // Adds space between the columns
+    //use mixins to create display as grid and column, rows and gap 
+    @include grid-layout((1.0fr, 1.4fr), null, 10px); 
     background-color: $color-off-white;
     padding: 5% 10% 21%;  // Adjust padding for better alignment on larger screen
   }

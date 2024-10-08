@@ -25,11 +25,9 @@
 }
 
 .Kayaking-info-section {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    @include grid-layout((1fr 1fr), null, 40px); 
     flex-wrap: wrap; // Wrap the articles
     justify-content: center; // Center the articles
-    grid-gap: 40px; /* Add space between columns */
     max-width: 1000px;
     margin: 0 auto; /* Center the section on the page */
     text-align: left; /* Left-align text for better readability */

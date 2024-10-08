@@ -1,10 +1,13 @@
 /* Each review card in the review section */
 .review-cards{
-    display: flex;             
-    flex-direction: row;        /* Arrange cards in a column */
+    display: grid;
+    grid-template-columns: repeat(3, 0.25fr);
+    // display: flex;             
+    // flex-direction: row;        /* Arrange cards in a column */
     align-items: center;        /* Center align the cards */
+    justify-items: center;
     margin-left: 18%;  
-    gap: 20px;
+    gap: 0px;
 }
 /* Styles for the review section */
 .review_section {
