@@ -1,0 +1,725 @@
+body {
+  font-family: "Arial", sans-serif;
+  color: #333;
+  line-height: 1.3;
+}
+
+h2, h3 {
+  font-weight: 100;
+  color: #333;
+}
+
+h2 {
+  font-size: xxx-large;
+}
+
+h1 {
+  font-weight: 580;
+  font-size: 35px;
+}
+
+p {
+  color: rgba(107, 107, 107, 0.6509803922);
+}
+
+/* Citation text styling */
+.cite {
+  font-size: small;
+  color: rgb(111, 106, 106);
+}
+.cite a {
+  text-decoration: underline;
+  color: rgb(111, 106, 106);
+}
+
+/* Mixin for button styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  padding-bottom: 20px;
+}
+header .navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: grid;
+  grid-template-columns: 1fr auto  ;
+  align-items: flex-start;
+  padding: 10px 20px;
+  background-color: #f8f8f8;
+}
+header .navbar p {
+  grid-column: 1;
+  font-size: larger;
+  font-weight: 500;
+  color: rgba(128, 128, 128, 0.51);
+}
+header .navbar .nav-links {
+  display: none;
+}
+header .navbar .menu-icon {
+  grid-column: 2;
+  font-size: 28px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+header .navbar .menu-icon:hover {
+  background-color: #d2c8c8;
+}
+
+/* Variables */
+/* Hero Section */
+.hero-section {
+  background-image: url("../images/home-image-2.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 65%;
+  width: 100%;
+  height: 400px;
+  position: relative;
+  margin-bottom: 60px;
+  margin-top: 120px;
+  /* Black background overlay */
+  /* Card with heading */
+  /* Card with orange background */
+}
+.hero-section .bg-black {
+  background-color: #312d27;
+  padding-top: 10px;
+  margin: auto;
+  width: 100%;
+  height: 150%;
+  position: absolute;
+  top: 75%;
+  right: 0%;
+  z-index: -1;
+}
+.hero-section .card-with-heading {
+  background-color: #ffffff;
+  padding: 20px;
+  width: 300px;
+  height: 250px;
+  position: absolute;
+  top: 85%;
+  left: 35%;
+  transform: translate(-50%, -20%);
+  z-index: 1;
+  margin: auto;
+}
+.hero-section .card-with-heading h1 {
+  margin-top: 2%;
+  margin-bottom: 0px;
+}
+.hero-section .card-with-orange-background {
+  background-color: #f47d1c;
+  padding-top: 10px;
+  margin: auto;
+  width: 400px;
+  height: 250px;
+  position: absolute;
+  top: 15%;
+  right: 0%;
+  transform: translate(-52%, -37%);
+  z-index: -1;
+}
+
+/* include Button Styles */
+.btn-orange {
+  border: none;
+  cursor: pointer;
+  background-color: #f47d1c;
+  padding: 10px;
+  text-decoration: none !important;
+  color: #ffffff;
+  font-size: x-small;
+  box-shadow: rgba(0, 0, 0, 0.3921568627);
+  font-weight: 450;
+  letter-spacing: 1.5px;
+  width: fit-content;
+}
+
+.cite {
+  padding: 9px 0px 7px 0px;
+}
+
+.tour-section {
+  background-color: #312d27;
+  text-align: center;
+}
+.tour-section .tour-article {
+  display: block;
+  margin-top: 15%;
+  height: 35px;
+  text-align: center;
+  color: #ffffff;
+  font-size: xx-large;
+}
+.tour-section .tour-article h2 {
+  margin-bottom: 5px; /* `auto` doesn't have an effect for margin-bottom */
+  font-weight: 100;
+  color: #ffffff;
+}
+.tour-section .tour-article .cite {
+  text-align: center;
+  font-size: small;
+  color: #f1f1f1;
+  max-width: 30%;
+  margin: 0 auto; /* Center the cite element */
+  font-weight: 15;
+  line-height: 2.1;
+}
+.tour-section .tour-article .cite a {
+  color: #f1f1f1;
+  text-decoration: underline;
+}
+.tour-section .tour-cards-white-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 20px;
+  max-width: 1000px;
+  position: relative;
+  top: 4px;
+}
+.tour-section .tour-card-white {
+  background-color: #ffffff;
+  padding: 25px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  text-align: center;
+  margin: auto;
+  color: rgba(107, 107, 107, 0.6509803922);
+  position: relative;
+  z-index: 2;
+  top: 130px;
+}
+.tour-section .tour-card-white h3 {
+  color: rgba(31, 31, 31, 0.8235294118);
+  font-size: medium;
+  font-weight: 700;
+  margin: 7px 0px 15px 0px;
+}
+
+.Kayaking-info {
+  background-color: #f1f1f1;
+  padding: 5% 0;
+  line-height: 1.8;
+}
+
+/* Centering Learn More button container in Kayaking info section */
+.center-button {
+  /* include Button Styles */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90px;
+  margin: 30px auto 0;
+}
+.center-button .btn-orange-large {
+  border: none;
+  cursor: pointer;
+  background-color: #f47d1c;
+  padding: 10px 20px;
+  text-decoration: none !important;
+  color: #ffffff;
+  font-size: x-small;
+  box-shadow: rgba(0, 0, 0, 0.3921568627);
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+/* Heading styles for mission, vision, and history section */
+.Kayaking-info-section-heading {
+  display: block;
+  text-align: center;
+  margin: 60px auto 40px;
+  font-size: x-large;
+}
+
+.Kayaking-info-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr  ;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto; /* Center the section on the page */
+  text-align: left; /* Left-align text for better readability */
+}
+
+/* Styles for individual info articles (Mission, Vision, History) */
+.Kayaking-info-section article {
+  display: flex;
+  align-items: stretch; /* Align the circle and text */
+  padding: 10px;
+  flex-wrap: wrap;
+  margin: 0 2.5%;
+}
+.Kayaking-info-section article .article-text {
+  max-width: 90%;
+}
+
+.Kayaking-info-section h3 {
+  display: inline-block;
+  font-size: large;
+  font-weight: 200;
+  margin-bottom: 10px;
+  color: #434343;
+}
+
+.Kayaking-info-section p {
+  font-size: small;
+  font-weight: 100;
+  margin-left: 44px;
+  color: #bab8b8;
+}
+
+.article-text {
+  max-width: 90%;
+}
+
+/* Circle element used for decorative purposes */
+.circle {
+  width: 35px;
+  height: 35px;
+  background-color: #f47d1c;
+  border-radius: 50%;
+  flex-shrink: 0; /* Ensure the circle doesn't shrink */
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.promotion-section {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr  ;
+  gap: 5px;
+  align-items: center;
+  padding: 40px;
+  margin: 0 5%;
+  justify-items: stretch;
+  margin-left: 18%;
+}
+.promotion-section .tour-content-and-small-images {
+  grid-column: 1;
+  max-width: 90%;
+}
+.promotion-section .tour-content-and-small-images h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+.promotion-section .tour-content-and-small-images p {
+  font-size: small;
+  color: #bab8b8;
+  margin-bottom: 20px;
+  max-width: 90%;
+}
+.promotion-section .tour-content-and-small-images .small-tour-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.promotion-section .tour-content-and-small-images .small-tour-images img {
+  width: 120px;
+  height: 110px;
+  background-color: #ffffff;
+}
+.promotion-section .tour-content-and-small-images .btn-orange-large {
+  border: none;
+  cursor: pointer;
+  background-color: #f47d1c;
+  padding: 10px 20px;
+  text-decoration: none !important;
+  color: #ffffff;
+  font-size: x-small;
+  box-shadow: rgba(0, 0, 0, 0.3921568627);
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  margin-bottom: 35px;
+}
+.promotion-section .tour-images {
+  margin-left: 10px;
+}
+.promotion-section .tour-images .main-image {
+  width: 60%;
+  height: auto;
+}
+
+/* Section for kayak tourist places */
+.kayak-tourist-place_section {
+  display: grid;
+  grid-template-columns: 1fr, 1.4fr,  ;
+  gap: 10px;
+  background-color: #f1f1f1;
+  padding: 5% 10% 21%;
+}
+
+.left {
+  grid-column: 1;
+  max-width: 60%;
+  margin-left: 31%;
+  margin-top: 7%;
+  /* Adjusted circle placement */
+}
+.left .circle-downwards {
+  width: 70px;
+  height: 70px;
+  background-color: #f47d1c;
+  border-radius: 90%;
+  flex-shrink: 0; /* Ensure the circle doesn't shrink */
+  margin-top: 40px;
+}
+
+.kayak-tourist-place_section h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: left;
+  line-height: 1.2;
+}
+
+/* Details for kayak tours (Left side) */
+.kayak-tours-details {
+  grid-column: 2;
+  max-width: 75%;
+}
+.kayak-tours-details h3 {
+  font-size: 1.2em;
+  margin: 0;
+  font-weight: 800;
+}
+
+/* Mission card details section (Right side) */
+.mission-card-details {
+  background-color: #ffffff;
+  padding: 40px;
+}
+.mission-card-details p {
+  color: #312d27;
+}
+
+.mission-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e4e4e4;
+  padding: 15px;
+  font-size: small;
+  color: #f47d1c;
+}
+.mission-card-header h3 {
+  color: #f47d1c;
+}
+
+/* Other card details section */
+.other-card-details section {
+  display: flex;
+  justify-content: space-between;
+  font-size: small;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 5px 50px 40px 50px;
+  color: rgba(107, 107, 107, 0.6509803922);
+}
+.other-card-details section h3 {
+  color: rgba(107, 107, 107, 0.6509803922);
+}
+
+/* Styling for each rating card */
+.ratings-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Styling for toggle buttons */
+.toggle-btn-white {
+  color: #9f9898;
+  background: none;
+  border: none;
+  font-size: 1.8em;
+  cursor: pointer;
+}
+
+.toggle-btn {
+  color: #f47d1c;
+  background: none;
+  border: none;
+  font-size: 1.8em;
+  cursor: pointer;
+}
+
+/* Mission card details */
+.mission-card-details p {
+  font-size: 0.9em;
+  padding: 10px;
+  margin: 3% 0 1%;
+}
+
+/* List styling in mission card details */
+.mission-card-details ul {
+  margin: 0;
+  padding-left: 15px;
+}
+
+.mission-card-details ul li {
+  text-align: start;
+  font-size: 0.9em;
+  list-style: none;
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 5px;
+  color: rgba(107, 107, 107, 0.6509803922);
+}
+
+.mission-card-details ul li:before {
+  content: "-";
+  position: absolute;
+  left: 2%;
+  color: rgba(107, 107, 107, 0.6509803922);
+}
+
+/* Add orange background to Mission section */
+.org-background {
+  background-color: #f47d1c;
+  padding-bottom: 3%;
+  padding-top: 5%;
+}
+
+/* Mission card section padding */
+.our-mission_card-section {
+  padding: 10%;
+  position: relative;
+}
+
+/* Style for the mission card image */
+.our-mission_card-image {
+  position: absolute;
+  transform: translate(45%, -100%);
+  z-index: 1;
+  margin: auto;
+}
+.our-mission_card-image img {
+  height: 500px;
+  width: 170%;
+  object-fit: cover;
+  max-width: none;
+}
+
+/* Style for the mission card */
+.our-mission_card {
+  position: absolute;
+  background-color: #ffffff;
+  max-width: 35%;
+  text-align: left;
+  left: 55%;
+  padding: 4% 2%;
+  transform: translate(-35%, -90%);
+  z-index: 2;
+}
+.our-mission_card .btn-orange-large {
+  border: none;
+  cursor: pointer;
+  background-color: #f47d1c;
+  padding: 10px 20px;
+  text-decoration: none !important;
+  color: #ffffff;
+  font-size: x-small;
+  box-shadow: rgba(0, 0, 0, 0.3921568627);
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  margin-bottom: 35px;
+}
+.our-mission_card .cite {
+  padding-bottom: 35px;
+}
+.our-mission_card h2 {
+  font-size: 2rem;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.our-mission_card p {
+  max-width: 90%;
+  padding: 10px 0px 10px 0px;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* Each review card in the review section */
+.review-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 0.25fr);
+  align-items: center; /* Center align the cards */
+  justify-items: center;
+  margin-left: 18%;
+  gap: 0px;
+}
+
+/* Styles for the review section */
+.review_section h2 {
+  display: block;
+  text-align: center;
+  padding-top: 0%;
+  padding-bottom: 3%;
+  font-size: x-larger;
+  color: #ffffff;
+}
+
+/* style the each review card */
+.review {
+  background-color: #ffffff;
+  padding: 25px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  max-width: 280px;
+  text-align: left;
+  height: 280px;
+  /* add a orange line in review card */
+}
+.review p {
+  line-height: 1.6;
+  margin: 10px 0 20px 0;
+  color: #bfb8b8;
+}
+.review time {
+  font-size: 13px;
+  color: #312d27;
+  font-weight: 550;
+  padding-bottom: 6px;
+}
+.review .orange-line {
+  width: 100%;
+  height: 2px;
+  background-color: #f47d1c;
+  margin-bottom: 6%;
+}
+
+.black p {
+  color: rgba(0, 0, 0, 0.631372549);
+}
+
+/* Contact form styling */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 30%;
+  gap: 7px;
+}
+.contact-form h3 {
+  color: #ffffff;
+}
+.contact-form input {
+  margin-top: 1px;
+  height: 30px;
+}
+.contact-form textarea {
+  height: 75px;
+}
+.contact-form button {
+  border: none;
+  cursor: pointer;
+  background-color: #f47d1c;
+  padding: 10px 20px;
+  text-decoration: none !important;
+  color: #ffffff;
+  font-size: x-small;
+  box-shadow: rgba(0, 0, 0, 0.3921568627);
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  margin-top: 10px;
+}
+
+input::placeholder, textarea::placeholder {
+  color: rgb(172, 171, 171);
+  opacity: 1;
+}
+
+/* Footer section containing location and contact, form information */
+.footer {
+  background-color: #292b33;
+}
+
+/* add style to dispaly location and form section */
+.location-form-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20%;
+  padding-top: 5%;
+  padding-bottom: 3%;
+}
+
+/* Location information section */
+.location {
+  max-width: 50%;
+  padding-left: 18%;
+}
+.location h3 {
+  color: #ffffff;
+}
+.location address {
+  color: rgba(255, 255, 255, 0.654);
+  margin-top: 15%;
+}
+.location address span {
+  display: block;
+  margin-bottom: 5px; /* Optional: Add some space between the lines */
+  line-height: 1.5;
+}
+
+/* Section for social media links */
+.follow-us {
+  margin-top: 40px;
+}
+.follow-us h3 {
+  padding-bottom: 10px;
+}
+.follow-us .social-facebook img {
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.follow-us .social-twitter img {
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.follow-us .social-instagram img {
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.follow-us .social-linkedin img {
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+/* Privacy policy section */
+.privacy-policy {
+  padding-top: 25px;
+  font-size: medium;
+}
+.privacy-policy p {
+  color: rgba(255, 255, 255, 0.654);
+}
+
+/* Extra information section at the bottom of the footer */
+.extra-info {
+  display: flex;
+  background-color: #323232;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.extra-info p {
+  color: rgba(255, 255, 255, 0.683);
+  max-width: 18%;
+  font-size: x-small;
+}
+
+/*# sourceMappingURL=main.css.map */
